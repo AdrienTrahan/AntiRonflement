@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="theboldfont.ttf">
+            <string>TheBoldFont</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AntiRonflement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-Gd-DNS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-Be-ZGQ">
+                                <rect key="frame" x="122.5" y="268.5" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="d3R-Oa-uLe"/>
+                                    <constraint firstAttribute="width" constant="130" id="e8y-q5-4H4"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="powerOff"/>
+                                <connections>
+                                    <action selector="Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AG-ag-Nrc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le détecteur de ronflements est en arrêt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzN-tl-YOe">
+                                <rect key="frame" x="43" y="106" width="289" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="DF2-wH-4X9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TheBoldFont" family="The Bold Font" pointSize="33"/>
+                                <color key="textColor" red="0.84313725490196079" green="0.2196078431372549" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAT-dp-Amw">
+                                <rect key="frame" x="0.0" y="269.5" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Epc-ee-Ig3"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Antironfleur à besoin de:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95172846499999997" green="0.95172846499999997" blue="0.95172846499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="   ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95172846499999997" green="0.95172846499999997" blue="0.95172846499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.95172846499999997" green="0.95172846499999997" blue="0.95172846499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">- microphone
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.95172846499999997" green="0.95172846499999997" blue="0.95172846499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95172846499999997" green="0.95172846499999997" blue="0.95172846499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="6" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+- notification</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.95172846499999997" green="0.95172846499999997" blue="0.95172846499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJE-vT-VZn">
+                                <rect key="frame" x="16" y="20" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="FKh-SJ-Suv"/>
+                                    <constraint firstAttribute="width" constant="22" id="Oht-aF-Hlc"/>
+                                </constraints>
+                                <color key="tintColor" red="0.95172846499999997" green="0.95172846499999997" blue="0.95172846499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="kKP-Ck-Gmk" kind="popoverPresentation" popoverAnchorView="aJE-vT-VZn" id="M0j-a5-sHJ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G8D-Be-ZGQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2w2-XO-58a"/>
+                            <constraint firstItem="fAT-dp-Amw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ByD-jT-ip3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fAT-dp-Amw" secondAttribute="trailing" id="CEC-Zi-D6S"/>
+                            <constraint firstItem="cIM-Gd-DNS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="Cq0-kb-biu"/>
+                            <constraint firstItem="aJE-vT-VZn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EZ2-pE-nNT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GzN-tl-YOe" secondAttribute="trailing" constant="43" id="GcV-zM-aOp"/>
+                            <constraint firstItem="cIM-Gd-DNS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HKB-sH-jvG"/>
+                            <constraint firstItem="fAT-dp-Amw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IHB-ra-cZ8"/>
+                            <constraint firstItem="aJE-vT-VZn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Iqh-Nk-jwE"/>
+                            <constraint firstItem="cIM-Gd-DNS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OwQ-ln-IwW"/>
+                            <constraint firstItem="G8D-Be-ZGQ" firstAttribute="top" secondItem="GzN-tl-YOe" secondAttribute="bottom" constant="27.5" id="PV3-io-QKA"/>
+                            <constraint firstItem="cIM-Gd-DNS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UCq-rM-AZ0"/>
+                            <constraint firstItem="fAT-dp-Amw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5y-aK-2lW"/>
+                            <constraint firstItem="cIM-Gd-DNS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bhN-Yq-9yJ"/>
+                            <constraint firstItem="GzN-tl-YOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="bw8-SM-jn9"/>
+                            <constraint firstItem="G8D-Be-ZGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iuU-uj-ewo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Missing" destination="fAT-dp-Amw" id="mom-0J-drm"/>
+                        <outlet property="StateLbl" destination="GzN-tl-YOe" id="nTI-rv-sLr"/>
+                        <outlet property="button" destination="G8D-Be-ZGQ" id="5oG-Yh-QcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="139.880059970015"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y4E-Mb-4o5">
+            <objects>
+                <viewController storyboardIdentifier="screen1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qmz-kr-QmO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T1u-6b-Rjb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBp-a3-EcP">
+                                <rect key="frame" x="50" y="486" width="275" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="wBF-PC-8gf"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Accepter les permissions
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+AntiRonflement à besoin du micro et des notifications pour fonctionner</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo1" translatesAutoresizingMaskIntoConstraints="NO" id="UT6-9Q-kL5">
+                                <rect key="frame" x="15" y="45" width="344" height="416"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11757732935520038" green="0.11757732935520038" blue="0.11757732935520038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UT6-9Q-kL5" firstAttribute="leading" secondItem="cCF-YN-LJS" secondAttribute="leading" constant="15" id="20M-MJ-Eyo"/>
+                            <constraint firstItem="cCF-YN-LJS" firstAttribute="bottom" secondItem="PBp-a3-EcP" secondAttribute="bottom" constant="27" id="AtB-g7-7Np"/>
+                            <constraint firstItem="UT6-9Q-kL5" firstAttribute="trailing" secondItem="cCF-YN-LJS" secondAttribute="trailing" constant="-16" id="Czb-FE-bCB"/>
+                            <constraint firstItem="PBp-a3-EcP" firstAttribute="leading" secondItem="cCF-YN-LJS" secondAttribute="leading" constant="50" id="E1u-cs-kgO"/>
+                            <constraint firstItem="PBp-a3-EcP" firstAttribute="top" secondItem="UT6-9Q-kL5" secondAttribute="bottom" constant="25" id="h92-WN-Leq"/>
+                            <constraint firstItem="UT6-9Q-kL5" firstAttribute="top" secondItem="cCF-YN-LJS" secondAttribute="top" constant="25" id="n2o-yu-5bf"/>
+                            <constraint firstItem="PBp-a3-EcP" firstAttribute="centerX" secondItem="T1u-6b-Rjb" secondAttribute="centerX" id="wrT-dX-Ylk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cCF-YN-LJS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmp-ol-ms4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352.8" y="139.880059970015"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oFE-79-r0G">
+            <objects>
+                <viewController storyboardIdentifier="screen2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eRf-9x-FRV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uAo-8g-O86">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-B4-msn">
+                                <rect key="frame" x="50" y="493" width="275" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="154" id="PWb-X6-L6S"/>
+                                    <constraint firstAttribute="height" constant="154" id="pA9-lw-sJu"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Ajuster Les paramètres
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  ">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Changez le délai, le nombre de pulse et la sensibilité</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo2" translatesAutoresizingMaskIntoConstraints="NO" id="ajQ-BZ-bPk">
+                                <rect key="frame" x="10" y="45" width="355" height="423"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1175773294" green="0.1175773294" blue="0.1175773294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lh1-B4-msn" firstAttribute="centerX" secondItem="uAo-8g-O86" secondAttribute="centerX" id="0el-py-LyF"/>
+                            <constraint firstItem="gP8-tw-QNP" firstAttribute="trailing" secondItem="ajQ-BZ-bPk" secondAttribute="trailing" constant="10" id="1Mk-sx-be1"/>
+                            <constraint firstItem="ajQ-BZ-bPk" firstAttribute="top" secondItem="gP8-tw-QNP" secondAttribute="top" constant="25" id="JdM-ap-ms0"/>
+                            <constraint firstItem="lh1-B4-msn" firstAttribute="top" secondItem="ajQ-BZ-bPk" secondAttribute="bottom" constant="25" id="W9M-qS-bgL"/>
+                            <constraint firstItem="ajQ-BZ-bPk" firstAttribute="leading" secondItem="gP8-tw-QNP" secondAttribute="leading" constant="10" id="kmc-ta-tqp"/>
+                            <constraint firstItem="gP8-tw-QNP" firstAttribute="bottom" secondItem="lh1-B4-msn" secondAttribute="bottom" constant="20" id="p6g-US-WOT"/>
+                            <constraint firstItem="lh1-B4-msn" firstAttribute="leading" secondItem="gP8-tw-QNP" secondAttribute="leading" constant="50" id="rmP-5K-TMH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gP8-tw-QNP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUG-7t-i3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="140"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PVo-bP-v3E">
+            <objects>
+                <viewController storyboardIdentifier="screen3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="buU-AR-23k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t0C-LX-ih6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLY-x3-IFH">
+                                <rect key="frame" x="50" y="493" width="275" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="154" id="EET-15-qoB"/>
+                                    <constraint firstAttribute="height" constant="154" id="FGY-CQ-TqB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="154" id="wzd-de-qOC"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lier un Apple Watch
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAgCg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="AntiRonflement fonctionne encore mieux avec un apple watch connecté à votre appareil">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo3" translatesAutoresizingMaskIntoConstraints="NO" id="nm7-4c-cjW">
+                                <rect key="frame" x="10" y="45" width="355" height="423"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1175773294" green="0.1175773294" blue="0.1175773294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CLY-x3-IFH" firstAttribute="centerX" secondItem="t0C-LX-ih6" secondAttribute="centerX" id="BLG-Ee-42Y"/>
+                            <constraint firstItem="CLY-x3-IFH" firstAttribute="leading" secondItem="0Qu-MT-KhY" secondAttribute="leading" constant="50" id="Mif-3K-NRn"/>
+                            <constraint firstItem="nm7-4c-cjW" firstAttribute="leading" secondItem="0Qu-MT-KhY" secondAttribute="leading" constant="10" id="U3L-GQ-MSh"/>
+                            <constraint firstItem="CLY-x3-IFH" firstAttribute="top" secondItem="nm7-4c-cjW" secondAttribute="bottom" constant="25" id="lmx-Fs-Hqf"/>
+                            <constraint firstItem="nm7-4c-cjW" firstAttribute="top" secondItem="0Qu-MT-KhY" secondAttribute="top" constant="25" id="nMm-Mc-cve"/>
+                            <constraint firstItem="0Qu-MT-KhY" firstAttribute="trailing" secondItem="nm7-4c-cjW" secondAttribute="trailing" constant="10" id="oSW-ff-dQd"/>
+                            <constraint firstItem="0Qu-MT-KhY" firstAttribute="bottom" secondItem="CLY-x3-IFH" secondAttribute="bottom" constant="20" id="wjU-gK-INx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Qu-MT-KhY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vN8-hF-xfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703" y="140"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="TB7-uN-H4k">
+            <objects>
+                <pageViewController storyboardIdentifier="demo" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="kKP-Ck-Gmk" customClass="PageViewController" customModule="AntiRonflement" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4PH-Kd-5JD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="140"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3AB-AR-YlK">
+            <objects>
+                <viewController storyboardIdentifier="screen4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mid-iG-re8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3X-wL-RUD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjI-fG-EBS">
+                                <rect key="frame" x="50" y="493" width="275" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="154" id="TdE-zp-h2M"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="154" id="Wyt-kZ-qn9"/>
+                                    <constraint firstAttribute="height" constant="154" id="YqE-Hm-WjA"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Commencer à détecter
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAgCg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Tapper sur le bouton rouge. Attendre jusqu'à ce qu'il devienne vert">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo4" translatesAutoresizingMaskIntoConstraints="NO" id="iVy-w0-SRj">
+                                <rect key="frame" x="10" y="45" width="355" height="423"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1175773294" green="0.1175773294" blue="0.1175773294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c2U-bu-RQw" firstAttribute="bottom" secondItem="RjI-fG-EBS" secondAttribute="bottom" constant="20" id="0rF-k5-WV9"/>
+                            <constraint firstItem="RjI-fG-EBS" firstAttribute="top" secondItem="iVy-w0-SRj" secondAttribute="bottom" constant="25" id="6No-m9-z1Y"/>
+                            <constraint firstItem="c2U-bu-RQw" firstAttribute="trailing" secondItem="iVy-w0-SRj" secondAttribute="trailing" constant="10" id="asJ-k8-Pjs"/>
+                            <constraint firstItem="RjI-fG-EBS" firstAttribute="leading" secondItem="c2U-bu-RQw" secondAttribute="leading" constant="50" id="f7x-XC-Oas"/>
+                            <constraint firstItem="iVy-w0-SRj" firstAttribute="top" secondItem="c2U-bu-RQw" secondAttribute="top" constant="25" id="neq-LK-s4F"/>
+                            <constraint firstItem="RjI-fG-EBS" firstAttribute="centerX" secondItem="O3X-wL-RUD" secondAttribute="centerX" id="s2o-eb-VkX"/>
+                            <constraint firstItem="iVy-w0-SRj" firstAttribute="leading" secondItem="c2U-bu-RQw" secondAttribute="leading" constant="10" id="yzB-Oy-FDs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c2U-bu-RQw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ht5-YR-Mma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3369" y="140"/>
+        </scene>
+        <!--Exitscreen-->
+        <scene sceneID="c9U-95-Sz1">
+            <objects>
+                <viewController storyboardIdentifier="screen5" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aAy-LI-Q9z" customClass="exitscreen" customModule="AntiRonflement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MKa-fk-QzY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik4-9I-sdm">
+                                <rect key="frame" x="50" y="472" width="275" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="175" id="LIW-LP-r8B"/>
+                                    <constraint firstAttribute="height" constant="175" id="o7i-3X-jtu"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="175" id="t6k-og-Ckg"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Fermer le téléphone
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAgCg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="assurer vous que la page d'acceuil affiche une bande rouge, sinon, recommencer la détection. Ensuite, fermer l'écran">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="TheBoldFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo5" translatesAutoresizingMaskIntoConstraints="NO" id="JtF-3Y-1f4">
+                                <rect key="frame" x="10" y="45" width="355" height="402"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1175773294" green="0.1175773294" blue="0.1175773294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JtF-3Y-1f4" firstAttribute="top" secondItem="QUd-hq-iMp" secondAttribute="top" constant="25" id="1Ng-c2-kEe"/>
+                            <constraint firstItem="QUd-hq-iMp" firstAttribute="trailing" secondItem="JtF-3Y-1f4" secondAttribute="trailing" constant="10" id="6Kp-BZ-gej"/>
+                            <constraint firstItem="JtF-3Y-1f4" firstAttribute="leading" secondItem="QUd-hq-iMp" secondAttribute="leading" constant="10" id="8qY-J5-ye2"/>
+                            <constraint firstItem="Ik4-9I-sdm" firstAttribute="leading" secondItem="QUd-hq-iMp" secondAttribute="leading" constant="50" id="CXp-PK-ald"/>
+                            <constraint firstItem="Ik4-9I-sdm" firstAttribute="centerX" secondItem="MKa-fk-QzY" secondAttribute="centerX" id="KB8-F8-ehf"/>
+                            <constraint firstItem="Ik4-9I-sdm" firstAttribute="top" secondItem="JtF-3Y-1f4" secondAttribute="bottom" constant="25" id="cD0-1Y-0SV"/>
+                            <constraint firstItem="QUd-hq-iMp" firstAttribute="bottom" secondItem="Ik4-9I-sdm" secondAttribute="bottom" constant="20" id="rfn-aa-ddq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QUd-hq-iMp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7F-As-yQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4050" y="140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="5000" height="6666"/>
+        <image name="demo1" width="1027" height="1432"/>
+        <image name="demo2" width="1027" height="1432"/>
+        <image name="demo3" width="1027" height="1432"/>
+        <image name="demo4" width="1027" height="1432"/>
+        <image name="demo5" width="1027" height="1432"/>
+        <image name="powerOff" width="2048" height="2048"/>
+    </resources>
+</document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-8152105874972316~3923296979</string>
+	<key>CLIENT_ID</key>
+	<string>961571377957-8330l55ao6euu91cjuf4o3lgr8l6q24f.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.961571377957-8330l55ao6euu91cjuf4o3lgr8l6q24f</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWVPgUNtokj0rigMbFK-pebIDeSZqQpgE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>961571377957</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.InputBox.AntiRonflement</string>
+	<key>PROJECT_ID</key>
+	<string>iposter-d2e6f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>iposter-d2e6f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:961571377957:ios:7632272ad9457b02</string>
+	<key>DATABASE_URL</key>
+	<string>https://iposter-d2e6f.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-8152105874972316~3923296979</string>
+</dict>
+</plist>
